@@ -15,7 +15,7 @@ allprojects {
 }
 ```
 
-> 导入module在app级别的 `build-gradle` 中添加
+> 导入module，并在app级别的 `build-gradle` 中添加
 
 ```groovy
 dependencies {
@@ -23,7 +23,7 @@ dependencies {
 }
 ```
 
-> app级别的 `build-gradle` 中`defaultConfig`配置申请的QQ的APP_ID
+> 在app级别的 `build-gradle` 中`defaultConfig`配置申请的QQ的APP_ID
 
 ```groovy
 defaultConfig {
@@ -48,13 +48,12 @@ defaultConfig {
 > 你需要在使用 SDK 之前进行初始化操作，建议放在 `Applicaton` 中进行。
 
 ```java
-String qqAppId = "xxx";
-String wxAppId = "xxx";
-String wxSecretKey = "xxx";
-String sinaAppId = "xxx";
-String ddAppId = "xxx";
+String qqAppId = "xxx"; //QQ的APP_ID
+String wxAppId = "xxx"; //微信的APP_ID
+String wxSecretKey = "xxx";//微信的密钥
+String sinaAppId = "xxx";//新浪的APP_ID
+
 SocialSDKConfig config = new SocialSDKConfig(this)
-        .dd(ddAppId)
         // 配置qq
         .qq(qqAppId)
         // 配置wx
