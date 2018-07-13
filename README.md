@@ -82,7 +82,7 @@ SocialSdk.setJsonAdapter(new OkHttpRequestAdapter());
 
 ## 登录和分享的使用
 
-> 使用非常简单的，可以查看demo里面[MainActivity.java](https://github.com/smuwjs/SocialSDK/blob/master/app/src/main/java/me/jeeson/android/demo/SocialSDKJsonAdapter.java)的详细调用方式
+> 使用非常简单的，可以查看demo里面[MainActivity.java](https://github.com/smuwjs/SocialSDK/blob/master/app/src/main/java/me/jeeson/android/demo/MainActivity.java)的详细调用方式
 
 ## 引用
 
