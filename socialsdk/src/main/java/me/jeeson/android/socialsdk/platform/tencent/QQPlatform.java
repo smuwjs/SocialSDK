@@ -87,7 +87,7 @@ public class QQPlatform extends AbsPlatform {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == Constants.REQUEST_QQ_SHARE || requestCode == Constants.REQUEST_QZONE_SHARE) {
-            if (mIUiListenerWrap != null)
+            if (mIUiListenerWrap != null && data != null)
                 Tencent.handleResultData(data, mIUiListenerWrap);
         } else if (requestCode == Constants.REQUEST_LOGIN) {
             if (mQQLoginHelper != null)
